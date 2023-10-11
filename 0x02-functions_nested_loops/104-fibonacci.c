@@ -44,5 +44,4 @@ int main(void)
 	}
 	printf("\n");
 	return (0);
-	int last_digit = n % 10;
 }
