@@ -2,7 +2,7 @@
 /**
  * _islower()- checks for lower character.
  * Return: integer 0 or 1.
- * @c = argument for function.
+ * @c: argument for function.
  */
 
 int _islower(int c)
