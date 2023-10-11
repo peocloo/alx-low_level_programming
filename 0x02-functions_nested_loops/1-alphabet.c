@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point 
+ * main - Entry point
  * Return: Always 0
  */
 void print_alphabet(void)
@@ -9,11 +9,10 @@ void print_alphabet(void)
 	char alphabet = 'a';
 
 	/*check to see if value is the same as last character*/
-	while(alphabet <= 'z')
+	while (alphabet <= 'z')
 	{
 		_putchar(alphabet);
 		alphabet++;
 	}
 	_putchar('\n');
-	return;
 }
