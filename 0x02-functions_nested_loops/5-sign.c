@@ -1,8 +1,8 @@
 #include "main.h"
 /**
+ *print_sign - function that prints sign of number.
  *@n:int argument for function
- *Return: integer
- *print_sign- function that prints sign of number.
+ *Return: integer 0, 1 or -1.
  */
 
 int print_sign(int n)
@@ -22,5 +22,4 @@ int print_sign(int n)
 		_putchar('-');
 		return (-1);
 	}
-}
-	
+}	
