@@ -14,8 +14,11 @@ void print_array(int *a, int n)
 
 	while (a[i] != a[n])
 	{
-		printf("%d, ", a[i]);
-		i ++;
+		if (a[i] == a[n - 1])
+			printf("%d", a[i]);
+		else
+			printf("%d, ", a[i]);
+		i++;
 	}
 	printf("\n");
 }
