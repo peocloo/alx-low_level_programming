@@ -2,13 +2,13 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - concatenates two strings
- * @s1: pointer to char argu
- * @s2: pointer to char argu
- * @n: unsigned integer argu
- *
- * Return: char
- */
+  * string_nconcat - concatenates two strings
+  * @s1: char pointer arg
+  * @s2: char pointer arg
+  * @n: unsigned int arg
+  *
+  * Return: char
+  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i = 0, j = 0, k = 0, l = 0;
@@ -21,31 +21,32 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	while (s1[i])
 		i++;
-	
-	while (s2[j])
-		j++;
 
-	if (n >= j)
-		l = i + j;
+	while (s2[k])
+		k++;
+
+	if (n >= k)
+		l = i + k;
 	else
 		l = i + n;
 
 	s = malloc(sizeof(char) * l + 1);
 	if (s == NULL)
 		return (NULL);
-	j = 0;
-	while (k < l)
-	{
-		if (k <= i)
-			s[k] = s1[k];
 
-		if (k >= i)
+	k = 0;
+	while (j < l)
+	{
+		if (j <= i)
+			s[j] = s1[j];
+
+		if (j >= i)
 		{
-			s[k] = s2[j];
-			j++;
+			s[j] = s2[k];
+			k++;
 		}
-		k++;
+		j++;
 	}
-	s[k] = '\0';
+	s[j] = '\0';
 	return (s);
 }
