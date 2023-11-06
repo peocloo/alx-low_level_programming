@@ -6,6 +6,8 @@
  * @name: first memeber
  * @age: second mem
  * @owner: third mem
+ *
+ * Description: Long
  */
 struct dog
 {
