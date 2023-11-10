@@ -6,6 +6,8 @@
  * print_strings - prints strings, followed by a new line
  * @separator: const pointer to int
  * @n:const unsigned int arg
+ *
+ * Return: nothing
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
