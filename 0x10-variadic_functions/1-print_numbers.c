@@ -6,6 +6,7 @@
  * print_numbers - prints numbers, followed by a new line
  * @separator: pointer to char,string to be printed between numbers
  * @n: number of integers passed
+ * @...: A variadic argument
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
