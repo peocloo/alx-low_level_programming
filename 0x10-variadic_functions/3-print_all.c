@@ -4,9 +4,8 @@
 #include <string.h>
 
 /**
- * print_all - prints anything.
+ * print_all - prints anything
  * @format:list of types of arguments passed
- *
  */
 void print_all(const char * const format, ...)
 {
