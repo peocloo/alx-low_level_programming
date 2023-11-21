@@ -3,8 +3,10 @@
 /**
  * print_list - prints all the element of a list_t
  * @h: argument of type pointer to list_t
+ *
  * Return: the number of nodes
  */
+
 size_t print_list(const list_t *h)
 {
 	size_t node_count = 0;
